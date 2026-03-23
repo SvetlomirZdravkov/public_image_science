@@ -94,12 +94,13 @@ else:
 st.markdown("---")
 
 # ---------- Tabs ----------
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     "Overview",
     "Topics",
     "Tone",
     "Trends",
-    "Data Explorer"
+    "Data Explorer",
+    "About / За проекта"
 ])
 
 # ---------- Tab 1: Overview ----------
@@ -253,3 +254,35 @@ with tab5:
         file_name="filtered_public_image_science.csv",
         mime="text/csv"
     )
+with tab6:
+    st.subheader("Project Information / Информация за проекта")
+
+    st.markdown("""
+    ### 🇬🇧 English
+
+    This dataset was produced within the framework of the research project:
+
+    **“Images of Science in the Digital World: Between Social Media and Internet Media”**
+
+    The project is implemented by the Institute of Philosophy and Sociology at the Bulgarian Academy of Sciences.
+
+    The project is funded by the Bulgarian National Science Fund under the competition:  
+    **“Fundamental Scientific Research – 2021”**
+
+    **Contract No.: КП 06-Н55/6, November 2021**
+
+    ---
+
+    ### 🇧🇬 Български
+
+    Настоящият набор от данни е създаден в рамките на научноизследователския проект:
+
+    **„Образите на науката в дигиталния свят: между социалните мрежи и интернет медиите“**
+
+    Проектът се изпълнява от Института по философия и социология при Българската академия на науките.
+
+    Проектът е финансиран от Фонд „Научни изследвания“ по конкурс:  
+    **„Конкурс за финансиране на фундаментални научни изследвания – 2021 г.“**
+
+    **Договор № КП 06-Н55/6, ноември 2021 г.**
+    """)
